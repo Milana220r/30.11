@@ -1,0 +1,1 @@
+console.log(elem.classList.contains(`ggg`));

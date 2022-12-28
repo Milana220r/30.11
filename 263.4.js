@@ -1,0 +1,1 @@
+elem.classList.remove(`www`, `zzz`);
