@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="www" id="parent2">
+        <div class="ggg" id="parent1">
+            <p class="zzz" id="child"></p>
+        </div>
+    </div>
+    <script>
+    let elem = document.querySelector('#child');
+    let parent = elem.closest('.www');
+    console.log(parent.id);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <p class="elem21">
+        <span>aaaaaaa</span>
+        <span>bbbbbbb</span>
+        <span>sssssss</span>
+    </p>
+    <script>
+        const getP21 = document.querySelector('.elem21');
+        const elems = getP21.children;
+
+        for (let i = 0; i < elems.length; i += 1) {
+            elems[i].innerHTML = `${elems[i].innerHTML}!`;
+        }
+    </script>
+  </body>
+</html>
