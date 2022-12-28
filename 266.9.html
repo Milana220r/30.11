@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <p class="elem24">
+      <span class="elem241">aaaaaaa</span>
+      <span>bbbbbbb</span>
+      <span>sssssss</span>
+  </p>
+  <script>
+      const getSpan24 = document.querySelector('.elem241');
+      const elem24 = getSpan24.nextElementSibling;
+      const elem24Next = elem24.nextElementSibling;
+      elem24Next.innerHTML = `${elem24Next.innerHTML}!`;
+  </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+	    <div>
+		    <p>
+			    <span id="elem"></span>
+		    </p>
+	    </div>
+    </header>
+    <script>
+    let divs = document.getElementsByTagName('div');
+    console.log(divs);
+    for (let elem of divs) {
+    elem.addEventListener('click', function () {
+        this.textContent += this.dataset.num;
+    });
+};
+    </script>    
+</body>
+</html>

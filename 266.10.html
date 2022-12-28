@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+	    <div>
+		    <p>
+			    <span id="elem">aaa</span>
+		    </p>
+	    </div>
+    </header>
+    
+    <script>
+        let elem = document.querySelector('#elem');
+        let dooo = elem.nextElementSibling.textContent;
+        let posle = elem.previousElementSibling.textContent;
+        elem.nextElementSibling.textContent = posle;
+        elem.previousElementSibling.textContent = dooo;
+  </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header>
+	    <div>
+		    <p>
+			    <span id="elem"></span>
+		    </p>
+	    </div>
+    </header>
+    <script>
+        let butt = document.querySelector('#button1');
+        let counter = 0;
+        butt.addEventListener('click', function () {
+        counter++;
+        this.dataset.count = counter;
+    });
+        butt.addEventListener('dblclick', function () {
+        console.log(this.dataset.count);
+    });
+    </script>    
+</body>
+</html>
